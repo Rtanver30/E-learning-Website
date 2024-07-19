@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+	<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Navigation -->	
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="/image/logo.png" alt="Logo" style="height: 40px;">
+                EnlightenDrashta
+            </a>
+        
+                
+                <form class="form-inline justify-content-center">
+                    <div class="form-group md-3">
+                        <input type="text" class="form-control" placeholder="Search for courses...">
+                    </div>
+                  
+                </form>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto"> <!-- Changed to ms-auto for right alignment -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index" th:href="@{/index}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Courses">Courses</a>
+						<div class="dropdown-menu fade-down m-0">
+						                        <a href="team.html" class="dropdown-item">IT Courser</a>
+						                        <a href="testimonial.html" class="dropdown-item">ALL ITI Trade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact" th:href="@{/contact}">Contact</a>
+                    </li>
+                </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="button">Login</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="button">Register</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container ">
+    
+<!--<nav class="navbar navbar-expand-lg ">
+                       
+                        <div class="container col-md-1"> <a class="nav-link" href="history.jsp">History</a></div>
+                    
+                      <div class="container col-md-1">
+                        <a class="nav-link" href="polity.jsp">Polity</a></div>
+                    
+                     <div class="container col-md-1">
+                        <a class="nav-link" href="#home">Hindi</a></div>
+                   
+                     <div class="container col-md-1">
+                        <a class="nav-link" href="#home">Economics</a></div>
+                    
+                     <div class="container col-md-2">
+                        <a class="nav-link" href="#home">Public administration</a></div>
+                   
+                    <div class="container col-md-1"> 
+                        <a class="nav-link" href="#home">Chemistry</a></div>
+                   
+                     <div class="container col-md-1">
+                        <a class="nav-link" href="#home">Physics</a></div>
+                    <div class="container col-md-1">
+                    <a class="nav-link" href="#home">Agriculture</a></div>
+                    <div class="container col-md-1">
+                        <a class="nav-link" href="#home">Maths</a></div>
+                     <div class="container col-md-1">
+                        <a class="nav-link" href="#home">Biology</a></div>
+                        
+                    <div class=" container col-md-1 btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Science & Techonlogy</a></li>
+    <li><a class="dropdown-item" href="#">Arts & Culture</a></li>
+    <li><a class="dropdown-item" href="#">Environment & Ecology</a></li>
+    <li><a class="dropdown-item" href="#">Social Issues</a></li>
+      
+    
+  </ul>
+</div>
+</nav>-->
+</div>
+</div>	
+</header>
+</body>
+</html>
