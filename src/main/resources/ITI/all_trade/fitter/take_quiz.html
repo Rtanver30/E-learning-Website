@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome To  All ITI Courses</title>
+        
+    <link rel="stylesheet" href="_files/css/style.css">
+    <script src="_files/js/script.js"></script>   
+    <link rel="stylesheet" href="_files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="_files/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="_files/css/main.minabc8.css?ver=1.04">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E20ELFGHR5"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-E20ELFGHR5');</script>
+    <style>.top_ad_unit, .right_ad_unit, .bottom_ad_unit {min-width:250px; width: 100%;} ins.adsbygoogle { background: transparent !important; }</style> 
+  </head>
+  <body class="">  
+	<itimain>
+  <aside class="sidebar-nav-wrapper">
+    
+    <nav class="sidebar-nav">
+        <ul>
+            <li class="nav-item"><a href="itimain.html" th:href="@{itimain}"><span class="icon"><i class="mdi mdi-home"></i></span><span class="text">Home</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-item"><a href="special.html" th:href="@{special}"  ><span class="icon"><i class="mdi mdi-code-tags"></i></span><span class="text">CTS & Diploma </span></a></li>
+            <li class="divider"></li>
+            <li class="nav-item"><a href="all_trade/fitter/fitter.html" th:href="@{fitter}"  ><span class="icon"><i class="mdi mdi-hexagon"></i></span><span class="text">Fitter</span></a></li>
+            <li class="nav-item"><a href="all_trade/electronics/electronics.html" th:href="@{electronics}"><span class="icon"><i class="mdi mdi-lightbulb"></i></span><span class="text">Electronics</span></a></li>
+            <li class="nav-item"><a href="all_trade/machinist/machinist.html"  th:href="@{machinist}" ><span class="icon"><i class="mdi mdi-wrench"></i></span><span class="text">Machinist</span></a></li>
+            <li class="nav-item"><a href="all_trade/electrician/electrician.html" th:href="@{electrician}"><span class="icon"><i class="mdi mdi-tools"></i></span><span class="text">Electrician</span></a></li>
+            <li class="nav-item"><a href="all_trade/copa/copa.html" th:href="@{copa}"><span class="icon"><i class="mdi mdi-laptop"></i></span><span class="text">COPA</span></a></li>
+            <li class="nav-item"><a href="all_trade/Networking/networking.html" th:href="@{networking}"><span class="icon"><i class="mdi mdi-lan"></i></span><span class="text">Networking & Hardware</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-item"><a href="all_trade/welder/welder.html" th:href="@{welder}" ><span class="icon"><i class="mdi mdi-fire"></i></span><span class="text">Welder</span></a></li>
+            <li class="nav-item"><a href="all_trade/tarner/tarner.html" th:href="@{tarner}"><span class="icon"><i class="mdi mdi-gauge"></i></span><span class="text">Tarner</span></a></li>
+            <li class="nav-item"><a href="all_trade/beautician/beautician.html" th:href="@{beautician}"><span class="icon"><i class="mdi mdi-brush"></i></span><span class="text">Beautician</span></a></li>
+            <li class="nav-item"><a href="all_trade/carpenter/carpenter.html"th:href="@{carpenter}"><span class="icon"><i class="mdi mdi-hammer"></i></span><span class="text">Carpenter</span></a></li>
+            <li class="divider"></li>
+         
+            <li class="nav-item"><a href="/contact" th:href="@{/contact}"><span class="icon"><i class="mdi mdi-card-account-mail-outline"></i></span><span class="text">Contact Us</span></a></li>
+        </ul>
+    </nav>
+  </aside>
+  <div class="overlay"></div>
+  <main class="main-wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-md-5 col-6">
+                    <div class="header-left d-flex align-items-center">
+                        <div class="menu-toggle-btn">
+                            <button aria-label="Menu Toggle" id="menu-toggle" class="main-btn">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </div>
+                        <div class="head-name">
+                            <a href="itimain.html" th:href="@{/itimain}" >ITI All Trades </a></div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div><a href="/index.html" th:href="@{/index}">Enlighten Drashta</a></div>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-6">
+                    <div class="header-right d-flex align-items-center">
+                        <div class="header-search d-none d-sm-block" id="search-form-box">
+                            <!--<form method="get" id="search-form" name="search form" action="https://www.google.co.in/search" target="_blank">
+                             
+                                <button aria-label="Search Submit" ><i class="mdi mdi-magnify mdi-24px"></i></button>
+                                <input name="as_q" id="txtSearchKey" class="search-box" type="text" placeholder="Search">
+                            </form>-->
+                        </div>
+                        <button aria-label="Search" id="btnSearch" class="header-button d-block d-sm-none">
+                        <i class="mdi mdi-magnify "></i>
+                        </button>       
+                        <button aria-label="Page Share" id="btnShare" class="header-button"><i class="mdi mdi-share"></i></button>
+                        <button aria-label="Theme Toggle" id="btnTheme" class="header-button"><i class="mdi mdi-theme-light-dark mdi-rotate-315"></i></button>
+                    
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.timer {
+    font-size: 1.2em;
+    color: red;
+}
+
+.question-container {
+    margin-top: 20px;
+}
+
+.question {
+    font-size: 1.2em;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.option.correct {
+    background-color: #c8e6c9;
+}
+
+.option.incorrect {
+    background-color: #ffcdd2;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.submit-button, .next-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.next-button {
+    background-color: #007bff;
+}
+/* Add this to the existing CSS */
+.result-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-message {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.result-pass {
+    color: green;
+}
+
+.result-fail {
+    color: red;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+       <button class="nav-item"><a href="itimain.html" th:href="@{itimain}"><span class="icon"><i class="mdi mdi-home"></i></span><span class="text"> Back </span></a></button>
+        <div class="header">
+            <h2>Module 1 Safety and Trade tools | सुरक्षा और ट्रेड टूल्स</h2>
+            <div class="timer">TIME LEFT: <span id="timer">60</span></div>
+        </div>
+        <div class="question-container">
+            <p class="question">Q. What is the period referred to as 'golden hours'? | 'गोल्डन आवर्स' की अवधि को क्या कहा जाता है?</p>
+            <div class="options">
+                <button class="option" data-correct="true">A) First 30 minutes after incident | घटना के बाद के पहले 30 मिनट</button>
+                <button class="option">B) First 30 minutes | पहले 30 मिनट</button>
+                <button class="option">C) First 45 minutes of admission | प्रवेश के पहले 45 मिनट</button>
+                <button class="option">D) First 60 minutes after treatment | उपचार के बाद के पहले 60 मिनट</button>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="submit-button">Submit</button>
+            <button class="next-button" style="display: none;">Next Question</button>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const questions = [
+        {
+            question: "What is the accuracy of a try square? | एक ट्राई स्क्वायर की परिशुद्धता (एक्युरेसी) क्या है?",
+            options: [
+                "0.02 mm per 10 mm length",
+                "0.004 mm per 10 mm length",
+                "0.002 mm per 10 mm length",
+                "0.001 mm per 10 mm length"
+            ],
+            correct: 1
+        },
+        {
+            question: "What is the period referred to as 'golden hours'? | 'गोल्डन आवर्स' की अवधि को क्या कहा जाता है?",
+            options: [
+                "First 30 minutes after incident | घटना के बाद के पहले 30 मिनट",
+                "First 30 minutes | पहले 30 मिनट",
+                "First 45 minutes of admission | प्रवेश के पहले 45 मिनट",
+                "First 60 minutes after treatment | उपचार के बाद के पहले 60 मिनट"
+            ],
+            correct: 0
+        },
+        {
+            question: "Which comes under mechanical occupational hazards? | कौन सा यांत्रिक व्यावसायिक खतरों के अंतर्गत आता है?",
+            options: [
+                "Noise | शोर",
+                "Toxic | विषैला",
+                "Unskilled | अकुशल",
+                "Unguarded machinery | अनगॉर्डेड मशीनरी"
+            ],
+            correct: 3
+        },
+        {
+            question: "What is the unit of measurement for the diameter of a wire? | तार के व्यास का मापदंड क्या है?",
+            options: [
+                "Millimeters | मिलीमीटर",
+                "Centimeters | सेंटीमीटर",
+                "Inches | इंच",
+                "Meters | मीटर"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the use of a micrometer? | माइक्रोमीटर का उपयोग क्या है?",
+            options: [
+                "To measure length | लंबाई मापने के लिए",
+                "To measure diameter | व्यास मापने के लिए",
+                "To measure voltage | वोल्टेज मापने के लिए",
+                "To measure temperature | तापमान मापने के लिए"
+            ],
+            correct: 1
+        },
+        {
+            question: "What is the purpose of a vernier caliper? | वर्नियर कैलिपर का उद्देश्य क्या है?",
+            options: [
+                "To measure depth | गहराई मापने के लिए",
+                "To measure internal and external dimensions | आंतरिक और बाहरी आयाम मापने के लिए",
+                "To measure height | ऊंचाई मापने के लिए",
+                "To measure weight | वजन मापने के लिए"
+            ],
+            correct: 1
+        },
+        {
+            question: "What is a hacksaw used for? | हैक्सॉ का उपयोग किस लिए होता है?",
+            options: [
+                "Cutting metal | धातु काटने के लिए",
+                "Cutting wood | लकड़ी काटने के लिए",
+                "Cutting plastic | प्लास्टिक काटने के लिए",
+                "Cutting glass | कांच काटने के लिए"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is a file used for in fitting? | फिटिंग में फाइल का उपयोग किस लिए होता है?",
+            options: [
+                "Cutting material | सामग्री काटने के लिए",
+                "Smoothing surfaces | सतहों को चिकना करने के लिए",
+                "Joining materials | सामग्रियों को जोड़ने के लिए",
+                "Heating materials | सामग्री को गर्म करने के लिए"
+            ],
+            correct: 1
+        },
+        {
+            question: "What is the purpose of a centre punch? | सेंटर पंच का उद्देश्य क्या है?",
+            options: [
+                "To mark the center of a hole | छेद के केंद्र को चिह्नित करने के लिए",
+                "To cut metal sheets | धातु की चादरें काटने के लिए",
+                "To join two pieces of metal | धातु के दो टुकड़ों को जोड़ने के लिए",
+                "To measure angles | कोण मापने के लिए"
+            ],
+            correct: 0
+        },
+        {
+            question: "Which type of hammer is used for sheet metal work? | शीट मेटल के काम के लिए किस प्रकार का हथौड़ा उपयोग किया जाता है?",
+            options: [
+                "Ball peen hammer | बॉल पीन हथौड़ा",
+                "Claw hammer | क्लॉ हथौड़ा",
+                "Sledge hammer | स्लेज हथौड़ा",
+                "Mallet | मैलेट"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the main use of a scriber? | स्क्राइबर का मुख्य उपयोग क्या है?",
+            options: [
+                "To draw lines on metal | धातु पर रेखाएं खींचने के लिए",
+                "To cut metal | धातु काटने के लिए",
+                "To heat metal | धातु को गर्म करने के लिए",
+                "To measure metal | धातु को मापने के लिए"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the purpose of a surface plate? | सतह प्लेट का उद्देश्य क्या है?",
+            options: [
+                "To provide a flat reference surface | एक समतल संदर्भ सतह प्रदान करने के लिए",
+                "To measure length | लंबाई मापने के लिए",
+                "To join materials | सामग्रियों को जोड़ने के लिए",
+                "To heat materials | सामग्री को गर्म करने के लिए"
+            ],
+            correct: 0
+        },
+        {
+            question: "Which tool is used to measure angles? | कोण मापने के लिए किस उपकरण का उपयोग किया जाता है?",
+            options: [
+                "Protractor | प्रोट्रैक्टर",
+                "Micrometer | माइक्रोमीटर",
+                "Caliper | कैलिपर",
+                "Ruler | रूलर"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the purpose of a die in fitting work? | फिटिंग कार्य में डाई का उद्देश्य क्या है?",
+            options: [
+                "To cut threads on a rod | रॉड पर थ्रेड काटने के लिए",
+                "To measure length | लंबाई मापने के लिए",
+                "To join materials | सामग्रियों को जोड़ने के लिए",
+                "To smooth surfaces | सतहों को चिकना करने के लिए"
+            ],
+            correct: 0
+        },
+        {
+            question: "What is the use of a tap in fitting? | फिटिंग में टैप का उपयोग क्या है?",
+            options: [
+                "To cut internal threads | आंतरिक थ्रेड काटने के लिए",
+                "To measure angles | कोण मापने के लिए",
+                "To cut metal | धातु काटने के लिए",
+                "To smooth surfaces | सतहों को चिकना करने के लिए"
+            ],
+            correct: 0
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let timer = 60;
+    let score = 0;
+    const passMark = 50; // Pass mark percentage
+    const timerElement = document.getElementById('timer');
+    const questionElement = document.querySelector('.question');
+    const optionsElement = document.querySelector('.options');
+    const submitButton = document.querySelector('.submit-button');
+    const nextButton = document.querySelector('.next-button');
+    const resultContainer = document.createElement('div');
+    resultContainer.className = 'result-container';
+    document.body.appendChild(resultContainer);
+
+    function loadQuestion() {
+        const currentQuestion = questions[currentQuestionIndex];
+        questionElement.textContent = `Q. ${currentQuestion.question}`;
+        optionsElement.innerHTML = ''; // Clear previous options
+        currentQuestion.options.forEach((option, index) => {
+            const optionButton = document.createElement('button');
+            optionButton.className = 'option';
+            optionButton.textContent = option;
+            optionButton.dataset.index = index;
+            optionButton.addEventListener('click', () => {
+                document.querySelectorAll('.option').forEach(opt => opt.style.backgroundColor = '#fff');
+                optionButton.style.backgroundColor = '#c8e6c9';
+            });
+            optionsElement.appendChild(optionButton);
+        });
+    }
+
+    function showResult() {
+        const percentage = (score / questions.length) * 100;
+        const resultMessage = document.createElement('div');
+        resultMessage.className = 'result-message';
+        if (percentage >= passMark) {
+            resultMessage.textContent = `Congratulations! You passed with a score of ${percentage.toFixed(2)}%.`;
+            resultMessage.classList.add('result-pass');
+        } else {
+            resultMessage.textContent = `Unfortunately, you failed with a score of ${percentage.toFixed(2)}%.`;
+            resultMessage.classList.add('result-fail');
+        }
+        resultContainer.appendChild(resultMessage);
+        resultContainer.style.display = 'block';
+    }
+
+    function resetQuiz() {
+        timer = 60;
+        currentQuestionIndex = 0;
+        score = 0;
+        timerElement.textContent = timer;
+        submitButton.style.display = 'inline-block';
+        nextButton.style.display = 'none';
+        resultContainer.style.display = 'none';
+        resultContainer.innerHTML = '';
+        loadQuestion();
+        countdown = setInterval(() => {
+            if (timer > 0) {
+                timer--;
+                timerElement.textContent = timer;
+            } else {
+                clearInterval(countdown);
+                alert('Time is up!');
+                showResult();
+            }
+        }, 1000);
+    }
+
+    let countdown = setInterval(() => {
+        if (timer > 0) {
+            timer--;
+            timerElement.textContent = timer;
+        } else {
+            clearInterval(countdown);
+            alert('Time is up!');
+            showResult();
+        }
+    }, 1000);
+
+    submitButton.addEventListener('click', () => {
+        let selectedOption = null;
+        const options = document.querySelectorAll('.option');
+        options.forEach(option => {
+            if (option.style.backgroundColor === 'rgb(200, 230, 201)') {
+                selectedOption = option;
+            }
+        });
+        if (selectedOption) {
+            const selectedAnswerIndex = selectedOption.dataset.index;
+            if (selectedAnswerIndex == questions[currentQuestionIndex].correct) {
+                selectedOption.classList.add('correct');
+                score++;
+            } else {
+                selectedOption.classList.add('incorrect');
+                options[questions[currentQuestionIndex].correct].classList.add('correct');
+            }
+            submitButton.style.display = 'none';
+            nextButton.style.display = 'inline-block';
+        } else {
+            alert('Please select an option.');
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            loadQuestion();
+            submitButton.style.display = 'inline-block';
+            nextButton.style.display = 'none';
+            document.querySelectorAll('.option').forEach(option => {
+                option.style.backgroundColor = '#fff';
+                option.classList.remove('correct', 'incorrect');
+            });
+        } else {
+            clearInterval(countdown);
+            showResult();
+        }
+    });
+
+    loadQuestion();
+});
+
+
+    </script>
+</body>
+</html>
