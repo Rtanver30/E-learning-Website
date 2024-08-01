@@ -50,12 +50,11 @@ public class Controller {
     public String course() {
         return "course";
     }
-    
-    @GetMapping("/about")
-    public String about() {
-        return "ReadMore/histoy";
+    @GetMapping("/aboutus")
+    public String aboutus() {
+        return "aboutus";
     }
-        
+              
     @GetMapping("/history")
     public String history() {
         return "ReadMore/history";
@@ -66,6 +65,43 @@ public class Controller {
         return "ReadMore/polity";
         
     }
+    @GetMapping("/hindi")
+    public String hindi() {
+        return "ReadMore/hindi";
+    }
+    @GetMapping("/economics")
+    public String economics() {
+        return "ReadMore/economics";
+    }
+    @GetMapping("/public administration")
+    public String publicadministration() {
+        return "ReadMore/public administration";
+    }
+    
+    @GetMapping("/chemistry")
+    public String chemistry() {
+        return "ReadMore/chemistry";
+    }
+    
+    @GetMapping("/physics")
+    public String physics() {
+        return "ReadMore/physics";
+    }
+    @GetMapping("/agriculture")
+    public String agriculture() {
+        return "ReadMore/agriculture";
+    }
+    
+    @GetMapping("/maths")
+    public String maths() {
+        return "ReadMore/maths";
+    }
+    @GetMapping("/biology")
+    public String biology() {
+        return "ReadMore/biology";
+    }
+    
+    
     @GetMapping("/savecontct")
     public String savecontact() {
     	return "savecontact";
@@ -136,11 +172,9 @@ public class Controller {
     public String BacktoTopics() {
     return "ITI/itimain";
     }
-        		
-@GetMapping("/web_design")
-public String web_design() {
-return "IT_topics/web_design";
-}
-    		
+    @GetMapping("/web_design")
+    public String web_design() {
+    return "IT_topics/web_design";
+    }		
     
 }
