@@ -136,6 +136,11 @@ public class Controller {
     public String BacktoTopics() {
     return "ITI/itimain";
     }
+        		
+@GetMapping("/web_design")
+public String web_design() {
+return "IT_topics/web_design";
+}
     		
     
 }
